@@ -1,0 +1,182 @@
+User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page avec CSS intégré</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+       /* Top Navigation */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #4f8abd;
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.top-nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.top-nav .logo-icon img {
+  max-height: 40px;
+}
+
+.top-nav nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.top-nav nav ul li {
+  margin-right: 20px;
+}
+
+.top-nav nav ul li:last-child {
+  margin-right: 0;
+}
+
+.top-nav nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  background-color: #fcfcfc;
+  color: #4f8abd;
+  padding: 100px 0;
+}
+
+.header-wrapper {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.hero-left .main-heading {
+  font-size: 64px;
+  font-family: "Dancing Script", cursive;
+}
+
+.hero-left .main-subheading {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4f8abd;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #357a9e;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="menu.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="formulaire.html">Formulaire</a>
+                    </li>
+                    <li>
+                        <a href="#">CV</a>
+                        <ul class="submenu">
+                          
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <form action="signup.php" method="post">
+            <h2>Créer un compte</h2>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" id="mdp" name="mdp" required>
+
+            <button type="submit">Créer le compte</button>
+        </form>
+    </div>
+</body>
+</html>

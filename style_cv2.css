@@ -1,0 +1,104 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page {
+    width: 60%;
+    min-width: 600px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f8f8f8;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-and-name {
+    /* No changes */
+}
+
+.photo {
+    width: 15%;
+    min-width: 130px;
+    float: left;
+    margin-right: 20px;
+}
+
+.contact-info-box {
+    width: 70.9%;
+    display: inline-block;
+}
+
+.name {
+    margin-bottom: -5px;
+}
+
+.job-title {
+    display: inline-block;
+}
+
+.contact-details {
+    background: #27aae1;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#objective h3,
+#education h3,
+#work h3,
+#bio-data h3 {
+    background: #ddd;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 30px 0 20px;
+}
+
+#objective p {
+    padding: 0 10px;
+    line-height: 1.6;
+}
+
+#education table td,
+#work table td,
+#bio-data table td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+#education table tr.school-1 td:first-child,
+#education table tr.school-2 td:first-child,
+#work table tr.work-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#education table tr.school-2 td:first-child,
+#work table tr.work-1 td {
+    padding-bottom: 25px;
+}
+
+#work table tr.work-2 td:first-child {
+    width: 120px;
+    color: gray;
+}
+
+#bio-data table tr td:first-child {
+    width: 200px;
+    font-weight: bold;
+}
